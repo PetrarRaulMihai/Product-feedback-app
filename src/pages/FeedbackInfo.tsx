@@ -58,7 +58,7 @@ function FeedbackInfo() {
     queryFn: () => fetchData(),
   });
 
-  const incrementUpvotes = async (e: any) => {
+  const incrementUpvotes = async () => {
     const rowUser: string = currentData[0].currentUser.username;
     if (feedbackData.usersUpvoted.includes(rowUser) || isUpvoteClicked) {
       return;
