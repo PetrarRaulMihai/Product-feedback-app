@@ -72,6 +72,7 @@ function AddReply({ setIsReplyInputOpen, comment }: any) {
         .from(TABLE_NAME)
         .update({ productRequests: updatedArray })
         .eq("id", "90813cf7-fdee-4f10-aef5-ce2c1950c9c3");
+      console.error(error);
     } catch {}
   };
 

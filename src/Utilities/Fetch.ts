@@ -6,6 +6,7 @@ export const fetchData = async () => {
     .from(TABLE_NAME)
     .select()
     .eq("id", "90813cf7-fdee-4f10-aef5-ce2c1950c9c3");
+  console.error(error);
 
   return data;
 };

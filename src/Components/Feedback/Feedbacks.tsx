@@ -7,7 +7,6 @@ import Loading from "../Loading/Loading";
 import { Link } from "react-router-dom";
 import styles from "../../styles/Feedbacks.module.css";
 import { useEffect, useState } from "react";
-import { filter } from "lodash";
 
 export type FeedbackProps = {
   category: string;

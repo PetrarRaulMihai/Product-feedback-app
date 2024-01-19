@@ -48,6 +48,7 @@ function NewFeedback() {
       .from(TABLE_NAME)
       .update({ productRequests: newArr })
       .eq("id", dataObjectSupabaseRow.id);
+    console.error(error);
   };
 
   return (

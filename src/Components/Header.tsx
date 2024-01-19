@@ -4,7 +4,6 @@ import closeMenu from "../assets/shared/mobile/icon-close.svg";
 import { useEffect, useReducer, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import fetchData from "../Utilities/Fetch";
-import Loading from "./Loading/Loading";
 
 function Header({ setFilterValue }: any) {
   const [inProgressCounter, setInProgressCounter] = useState(null);
@@ -90,6 +89,7 @@ function Header({ setFilterValue }: any) {
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
+      console.log(screenWidth);
     };
 
     window.addEventListener("resize", handleResize);

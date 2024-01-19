@@ -88,6 +88,7 @@ function FeedbackInfo() {
         .from("Product-feedback-app")
         .update({ productRequests: newArr })
         .eq("id", "90813cf7-fdee-4f10-aef5-ce2c1950c9c3");
+      console.error(error);
     }
     setIsUpvoteClicked(true);
   };
