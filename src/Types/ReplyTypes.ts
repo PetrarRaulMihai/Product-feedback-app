@@ -12,6 +12,7 @@ export type Reply = {
 
 export type ReplyItem = {
   replyItem: Reply;
+  comment: any;
 };
 
 export default Reply;
